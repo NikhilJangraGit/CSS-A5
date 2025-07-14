@@ -1,0 +1,55 @@
+body{
+    background-color: yellow;
+    color: black;
+    justify-content: center;
+    margin-left: 500px;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    margin: 10px;
+    transition-duration: 3s;
+}
+#box1:hover{
+    transition: linear;
+    width: 250px;
+    transition: 3s;
+}
+#box2:hover{
+    width: 250px;
+    height: 250px;
+    transition: width 2s, height 4s;
+}
+#box3:hover{
+    transition: linear;
+    width: 250px;
+    transition: 3s;
+}
+#box4:hover{
+    border-radius: 100px 1px 100px 1px;
+    height: 200px;
+    width: 200px;
+    transition: 3s;
+}
+#box5:hover{
+    transform: matrix(1, 0, 0, 1, 0, 0) rotate(45deg) skewX(30deg);
+    margin: 50px;
+    transition: 3s;
+}
+#box6:hover{
+    transform: translateY(-20px);
+    background-color: cadetblue;
+    transition: 3s;
+}
+#box7:hover{
+    height: 200px;
+    width: 200px;
+    transform: rotateX(70deg) rotateY(-75deg);
+}
+a{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 70px;
+}

@@ -1,0 +1,129 @@
+body{
+    background-color: yellow;
+    text-align: center;
+    
+}
+ol{
+padding-left:500px;
+}
+.li{
+    display: flex;
+    
+}
+.a1{
+    background-color: brown;
+    border: 1px solid black;  
+    margin: 30px; 
+    height: 100px;
+    width: 100px;
+    transition: 1s;
+    transform: skewX(20deg);
+    animation: skewx 3s  infinite ease-in-out;
+}
+@keyframes skewx {
+    0%{
+        transform: skewX(20deg);
+    }
+    50%{
+       transform: skewX(-20deg); 
+    }
+    100%{
+        transform: skewX(20deg);
+    }
+}
+.a2{
+    background-color: rgb(116, 42, 165);
+    border: 1px solid black;  
+    margin: 30px; 
+     height: 100px;
+    width: 100px;
+    transform: skewY(20deg);
+    animation: skewY 3s  infinite ease-in-out;
+}
+@keyframes skewY {
+    0%{
+        transform: skewY(20deg);
+    }
+    50%{
+       transform: skewY(-20deg); 
+    }
+    100%{
+        transform: skewY(20deg);
+    }
+}
+.a3{
+    background-color: rgb(151, 165, 42);
+    border: 1px solid black;  
+    margin: 30px; 
+     height: 100px;
+    width: 100px;
+    animation: rotate 3s  infinite ease-in-out;
+}
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+.a4{
+    background-color: rgb(162, 255, 0);
+    border: 1px solid black;  
+    margin: 30px; 
+     height: 100px;
+    width: 100px;
+}
+#k1{
+    animation: scaley 3s infinite;
+}
+@keyframes scaley {
+    0%{
+        transform: scaleY(1);
+        
+    }
+    50%{
+        transform: scaleY(0.2);
+        background-color: aqua;
+    }
+    100%{
+        transform: scaleY(1);
+        background-color: greenyellow;
+    }
+}
+#k2{
+    animation: scalex 3s infinite;
+}
+@keyframes scalex {
+    0%{
+        transform: scaleX(1);
+    }
+    50%{
+        transform: scaleX(0.2);
+        background-color: brown;
+    }
+    100%{
+        transform: scaleX(1);
+
+        background-color: crimson;
+    }
+}
+#k3{
+    animation: rotate1 3s infinite;
+}
+@keyframes rotate1 {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+a{
+    font-size: 25px;
+    text-decoration: none;
+}
